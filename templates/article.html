@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AIFinverse</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='logo.jpg') }}">
+
+    <style>
+        body {
+    min-height: 100vh;
+    background:
+        linear-gradient(
+            rgba(11, 29, 42, 0.85),
+            rgba(7, 16, 24, 0.9),
+            rgba(0, 0, 0, 1)
+        ),
+        url("{{ url_for('static', filename='bg1.jpg') }}");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding: 60px 20px;
+}
+
+
+        .article-container {
+            max-width: 900px;
+            margin: auto;
+            background: rgba(10, 15, 25, 0.8);
+            backdrop-filter: blur(14px);
+            border-radius: 22px;
+            padding: 40px;
+            box-shadow: 0 25px 60px rgba(0,0,0,0.6);
+        }
+
+        h1 {
+            font-size: 2.6rem;
+            margin-bottom: 20px;
+            background: linear-gradient(90deg, #ffecd2, #fcb69f);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.05rem;
+            opacity: 0.9;
+            margin-bottom: 18px;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 16px;
+            margin: 25px 0;
+        }
+
+        video {
+            width: 100%;
+            border-radius: 16px;
+            margin: 25px 0;
+        }
+
+        .back-btn {
+            margin-top: 30px;
+            display: inline-block;
+            padding: 12px 32px;
+            border-radius: 50px;
+            background: linear-gradient(135deg, #ffecd2, #fcb69f);
+            color: #000;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        /* 🎯 Logo top-left (BIG & premium) */
+.logo {
+    position: absolute;
+    top: 5px;
+    left: 30px;
+    z-index: 6;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 100px;          /* 🔥 BIG logo */
+    width: auto;
+    filter:
+        drop-shadow(0 10px 25px rgba(0,0,0,0.7))
+        drop-shadow(0 0 25px rgba(255, 200, 150, 0.35));
+    transition: transform 0.4s ease;
+}
+
+/* Subtle hover polish (optional but premium) */
+.logo img:hover {
+    transform: scale(1.05);
+}
+
+/* Mobile adjustment */
+@media (max-width: 768px) {
+    .logo img {
+        height: 65px;
+    }
+}
+
+.article-container img {
+    width: 70%;          /* adjust: 50–80% */
+    max-width: 650px;    /* prevents huge images */
+    display: block;
+    margin: 25px auto;  /* centers image */
+    border-radius: 16px;
+}
+
+.waitlist-text {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    margin: 30px 0;
+    line-height: 1.6;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+}
+
+.waitlist-text a {
+    background: linear-gradient(90deg, #ffecd2, #fcb69f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.waitlist-text a:hover {
+    text-shadow: 0 0 8px rgba(255, 236, 210, 0.8);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.hover-zoom {
+    width: 90%;
+    max-width: 800px;
+    display: block;
+    margin: 35px auto;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer; /* optional, shows it’s interactive */
+}
+
+.hover-zoom:hover {
+    transform: scale(1.2); /* zooms 20% bigger */
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4); /* optional shadow for depth */
+    z-index: 5; /* ensures it pops over nearby elements */
+}
+
+
+    </style>
+</head>
+
+<body>
+    <div class="logo">
+        <img src="{{ url_for('static', filename='logo2.png') }}" alt="AIFinverse Logo">
+    </div>
+
+<div class="article-container">
+    <h1>
+2025: Altseason was here, just not in crypto
+</h1>
+
+    <p>
+        My God, who would have thought that with US stock markets, precious metals ending the year virtually at a record high, crypto would be underperforming by a mile. Afterall, it was supposed to be Beta square or cube or octa. Calling it underperforming is being generous, when everything is deep deep red if you compare the prices to January eyes before $Trump and $Melania launched and kinda rugged alts and then added to the misery in April with the unleashing of tariff war and then literally nuked crypto on Oct 10, whoever is to be blamed for it. Most coins are down between 30-99.99%.
+    </p>
+    <!-- Video -->
+    <video controls>
+        <source src="{{ url_for('static', filename='video2.mp4') }}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Image -->
+    <img src="{{ url_for('static', filename='first.jpg') }}" alt="Article Image" class ="hover-zoom">
+    
+
+    
+
+    <p>
+  Santa seemed to have bailed out on crypto too. If this feels like crypto winter, hang on. Imagine what happens when it becomes risk off ergo stock market actually corrects 10-15-20%, which I see happening in 2026, possibly because of OpenAI.
+  I had written an article months ago, but, there was hope deep inside that if stocks rally, so would crypto,
+  <a href="https://www.linkedin.com/pulse/dude-wheres-my-alt-season-mohneesh-suri-v7aof/?trackingId=c0IQeFd5RFizmg2dPnyN5g%3D%3D">"Dude, where's my altseason?"</a>
+</p>
+<p>Anyways, credit where its due, the altseason that did happen - in stocks, in commodity. I am gonna try doing something different and call the asset leads adjacent to their crypto counterparts. Nvidia as Bitcoin, Alphabet as ETH and so on.. Gold as Bitcoin, Silver as ETH and so on and lets see how they performed this year, also adding a comparison from April lows to present.</p>
+    
+<img src="{{ url_for('static', filename='Capture.jpg') }}" alt="Article Image" 
+style="width:90%; max-width:800px; display:block; margin:35px auto;"
+class="hover-zoom">
+
+<img src="{{ url_for('static', filename='Chart1.jpg') }}" alt="Article Image">
+<img src="{{ url_for('static', filename='Chart2.jpg') }}" alt="Article Image">
+<img src="{{ url_for('static', filename='Chart3.jpg') }}" alt="Article Image">
+<p>While other assets had their moments and tumbles during the year, silver and co. never really looked back after the Apr 7 lows and the way they are closing is far from comforting. Silver @ $80? Up from $50 to $80 in 5 weeks? Friday, Dec 26 move in excess of 11%? Unbelievable short squeeze is on, and the shorters continue to have a Yaooza moment. If you go by the demand for physical silver, it could keep going but if you go by the technicals, there could be a rug pull waiting. Eventually, all alts correct!</p>
+<p class="waitlist-text">
+    While we wait for what happens next, 
+    <a href="/#landing" onclick="openLandingForm(event)">Join the waitlist</a>
+</p>
+
+
+<a href="/" class="back-btn">← Back to Home</a>
+</div>
+<script>
+function openLandingForm(event) {
+    event.preventDefault(); // Prevent default anchor behavior
+
+    // Redirect to landing page
+    window.location.href = "/"; 
+
+    // Optional: if already on landing page, open the form directly
+    setTimeout(() => {
+        if(document.getElementById("landing")) {
+            openForm();
+        }
+    }, 100); // small delay to ensure page loads
+}
+</script>
+
+</body>
+</html>
